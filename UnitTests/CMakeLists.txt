@@ -1,4 +1,4 @@
-file(GLOB UNIT_TESTS "${CMAKE_CURRENT_SOURCE_DIR}/tests/*.cpp")
+file(GLOB UNIT_TESTS "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 foreach(testSrc ${UNIT_TESTS})
   get_filename_component(testName ${testSrc} NAME_WE)
   set(testName "${testName}")
