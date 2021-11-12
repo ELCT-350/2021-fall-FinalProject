@@ -14,11 +14,6 @@ Block::~Block()
   throw NotImplementedException();
 }
 
-void Block::setInputPortValue(size_t index, double value)
-{
-  throw NotImplementedException();
-}
-
 double Block::getOutputPortValue(size_t index) const
 {
   throw NotImplementedException();

@@ -1,5 +1,6 @@
 #pragma once
 #include "Block.h"
+#include "InputPort.h"
 
 namespace ELCT350
 {
@@ -10,7 +11,6 @@ namespace ELCT350
     public:
       virtual ~Block();
 
-      void setInputPortValue(size_t index, double value);
       double getOutputPortValue(size_t index) const;
 
       virtual void signalStep(double timeStep, double time) = 0;
@@ -23,8 +23,8 @@ namespace ELCT350
       size_t _numberOfInputPorts;
       size_t _numberOfOutputPorts;
 
-      double* _inputPorts;
-      double* _outputPorts;
+      InputPort* _inputPorts;
+      OutputPort* _outputPorts;
     };
   }
 }
