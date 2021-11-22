@@ -11,7 +11,7 @@ namespace ELCT350
       InputPort();
 
       //set connected port address
-      void connect(OutputPort& port);
+      void connect(const OutputPort& port);
 
       //copy value from connected port
       void copyValue();
@@ -19,7 +19,7 @@ namespace ELCT350
       //is connected port ready
       bool areDependenciesSatisfied() const;
     private:
-      OutputPort* _connectedPort;
+      const OutputPort* _connectedPort;
     };
   }
 }
