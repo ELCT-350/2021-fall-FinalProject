@@ -28,7 +28,7 @@ int main()
       errorCode |= parameterValueFailure;
     }
   }
-  catch (const NotImplementedException& excp)
+  catch (const NotImplementedException&)
   {
     errorCode |= FunctionNotImplemented;
   }

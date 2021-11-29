@@ -18,7 +18,7 @@ namespace ELCT350
       void setAcross(double value);
       void setThrough(double value);
       void setReference(bool reference);
-      void setNode(std::shared_ptr<Node>& node);
+      void setNode(const std::shared_ptr<Node>& node);
 
       std::shared_ptr<Node>& getNode();
       #pragma endregion

@@ -3,4 +3,4 @@ file(GLOB_RECURSE SIMULATOR_HEADERS "${SIMULATOR_INCLUDE_DIR}/*.h")
 file(GLOB_RECURSE SIMULATOR_SOURCE "${CMAKE_CURRENT_LIST_DIR}/src/*.cpp")
 
 add_executable(simulator ${SIMULATOR_HEADERS} ${SIMULATOR_SOURCE})
-target_link_libraries(simulator Signal Mna)
+target_link_libraries(simulator Hybrid)

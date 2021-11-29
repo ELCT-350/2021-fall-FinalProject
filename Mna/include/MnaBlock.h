@@ -20,6 +20,7 @@ namespace ELCT350
       #pragma endregion
 
       #pragma region Observers
+      size_t getNumberOfPorts() const;
       double getAcross(size_t index) const;
       double getThrough(size_t index) const;
 
